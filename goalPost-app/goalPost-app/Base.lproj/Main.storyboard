@@ -3,6 +3,7 @@
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -74,13 +75,81 @@
                                 <rect key="frame" x="0.0" y="70" width="414" height="666"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="suk-W5-lDO">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="goalCell" rowHeight="70" id="suk-W5-lDO" customClass="GoalCell" customModule="goalPost_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="suk-W5-lDO" id="sxz-OE-hfg">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="X3e-Sa-Ih4">
+                                                    <rect key="frame" x="362" y="8" width="40" height="54"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="tintColor" name="AccentColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="Kvl-vW-prd"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="CourierNewPS-BoldItalicMT" family="Courier New" pointSize="39"/>
+                                                    <color key="textColor" red="0.42745098040000001" green="0.73725490199999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ik8-MA-LFx">
+                                                    <rect key="frame" x="30" y="11" width="322" height="48"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KTy-2S-ULr">
+                                                            <rect key="frame" x="0.0" y="0.0" width="322" height="26"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwZ-8R-9fP">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="58.666666666666664" height="26"/>
+                                                                    <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eat salad twice a week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="6Kq-fi-yZp">
+                                                                    <rect key="frame" x="63.666666666666657" y="0.0" width="258.33333333333337" height="26"/>
+                                                                    <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8Dw-Qu-KE1">
+                                                            <rect key="frame" x="0.0" y="31" width="322" height="17"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJE-7z-5Mr">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="51.333333333333336" height="17"/>
+                                                                    <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Short term" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aA5-x2-ouv">
+                                                                    <rect key="frame" x="56.333333333333343" y="0.0" width="265.66666666666663" height="17"/>
+                                                                    <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="KTy-2S-ULr" firstAttribute="height" secondItem="8Dw-Qu-KE1" secondAttribute="height" multiplier="1.52941" id="dtc-hU-abr"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="X3e-Sa-Ih4" firstAttribute="top" secondItem="sxz-OE-hfg" secondAttribute="top" constant="8" id="17J-ZC-rW3"/>
+                                                <constraint firstItem="X3e-Sa-Ih4" firstAttribute="leading" secondItem="Ik8-MA-LFx" secondAttribute="trailing" constant="10" id="4BC-W3-ZXB"/>
+                                                <constraint firstItem="Ik8-MA-LFx" firstAttribute="leading" secondItem="sxz-OE-hfg" secondAttribute="leadingMargin" constant="10" id="5f6-Px-8Gf"/>
+                                                <constraint firstItem="Ik8-MA-LFx" firstAttribute="top" secondItem="sxz-OE-hfg" secondAttribute="topMargin" id="Ofe-d3-A5w"/>
+                                                <constraint firstAttribute="trailing" secondItem="X3e-Sa-Ih4" secondAttribute="trailing" constant="12" id="kIS-VX-MpD"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Ik8-MA-LFx" secondAttribute="bottom" id="lPz-y2-CIB"/>
+                                                <constraint firstAttribute="bottom" secondItem="X3e-Sa-Ih4" secondAttribute="bottom" constant="8" id="mjz-uL-rWb"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="goalDescriptionLabel" destination="6Kq-fi-yZp" id="Ywg-cU-v23"/>
+                                            <outlet property="goalProgressLabel" destination="X3e-Sa-Ih4" id="e84-kS-XCQ"/>
+                                            <outlet property="goalTypeLabel" destination="aA5-x2-ouv" id="t8A-3v-e8x"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -110,6 +179,9 @@
     </scenes>
     <resources>
         <image name="addGoal" width="35" height="32"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
