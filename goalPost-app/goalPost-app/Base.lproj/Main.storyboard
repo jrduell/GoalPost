@@ -42,6 +42,7 @@
                                         <state key="normal" image="addGoal"/>
                                         <connections>
                                             <action selector="addGoalButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GT1-3O-2Gs"/>
+                                            <segue destination="DEf-1O-z6L" kind="presentation" id="WFm-1j-0Zi"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -176,14 +177,155 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="93.750000000000014"/>
         </scene>
+        <!--Create GoalVC-->
+        <scene sceneID="714-5l-AdD">
+            <objects>
+                <viewController id="DEf-1O-z6L" customClass="CreateGoalVC" customModule="goalPost_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HcA-lg-u8W">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPs-Fa-s9W">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="ldP-6r-Ipx">
+                                        <rect key="frame" x="150.66666666666666" y="27" width="112.99999999999997" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ude-qP-oew">
+                                                <rect key="frame" x="0.0" y="0.0" width="53" height="31"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="highlightedColor" systemColor="labelColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tk2-eo-hEh">
+                                                <rect key="frame" x="60" y="0.0" width="53" height="31"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wm-Ml-4HZ">
+                                        <rect key="frame" x="15" y="30" width="14" height="25"/>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backButtonWasPressed:" destination="DEf-1O-z6L" eventType="touchUpInside" id="wbN-HE-UJ6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.42745098040000001" green="0.73725490199999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Ple-ZH-jx6"/>
+                                    <constraint firstItem="2wm-Ml-4HZ" firstAttribute="centerY" secondItem="ude-qP-oew" secondAttribute="centerY" id="XYL-fL-i6W"/>
+                                    <constraint firstAttribute="bottom" secondItem="2wm-Ml-4HZ" secondAttribute="bottom" constant="15" id="eud-Mq-dU5"/>
+                                    <constraint firstItem="2wm-Ml-4HZ" firstAttribute="leading" secondItem="hPs-Fa-s9W" secondAttribute="leading" constant="15" id="jvi-Mn-Ia3"/>
+                                    <constraint firstItem="ldP-6r-Ipx" firstAttribute="centerX" secondItem="hPs-Fa-s9W" secondAttribute="centerX" id="n6u-gy-uhP"/>
+                                    <constraint firstAttribute="bottom" secondItem="ldP-6r-Ipx" secondAttribute="bottom" constant="12" id="wMm-dJ-JJo"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kxL-SW-Nqz">
+                                <rect key="frame" x="20" y="90" width="374" height="260"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What is your goal?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2ce-RR-08Y">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="176"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select One: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhd-yt-ySH">
+                                        <rect key="frame" x="0.0" y="186" width="374" height="14"/>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" systemColor="secondaryLabelColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hLi-P7-jXl">
+                                        <rect key="frame" x="0.0" y="210" width="374" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6g0-Sx-9Xt">
+                                                <rect key="frame" x="0.0" y="0.0" width="177" height="50"/>
+                                                <color key="backgroundColor" red="0.42745098040000001" green="0.73725490199999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
+                                                <state key="normal" title="SHORT TERM">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="shortTermButtonWasPressed:" destination="DEf-1O-z6L" eventType="touchUpInside" id="XPa-fo-EcB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olD-Wh-wGY">
+                                                <rect key="frame" x="197" y="0.0" width="177" height="50"/>
+                                                <color key="backgroundColor" red="0.69803921568627447" green="0.8666666666666667" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
+                                                <state key="normal" title="LONG TERM">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="longTermButtonWasPressed:" destination="DEf-1O-z6L" eventType="touchUpInside" id="c49-y0-7eD"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Goz-3M-b9c"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="260" id="cOP-SO-DZc"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pad-C3-8t0">
+                                <rect key="frame" x="0.0" y="666" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.91764705882352937" green="0.66274509803921566" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="wGP-qh-Oq9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonWasPressed:" destination="DEf-1O-z6L" eventType="touchUpInside" id="tbg-cU-5FC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TWT-RW-HOg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hPs-Fa-s9W" firstAttribute="trailing" secondItem="TWT-RW-HOg" secondAttribute="trailing" id="5RV-bw-MyF"/>
+                            <constraint firstItem="kxL-SW-Nqz" firstAttribute="top" secondItem="hPs-Fa-s9W" secondAttribute="bottom" constant="20" id="7Mw-2N-j8L"/>
+                            <constraint firstItem="hPs-Fa-s9W" firstAttribute="top" secondItem="TWT-RW-HOg" secondAttribute="top" id="D0L-Gc-dLP"/>
+                            <constraint firstItem="kxL-SW-Nqz" firstAttribute="leading" secondItem="TWT-RW-HOg" secondAttribute="leading" constant="20" id="MxY-9e-qTm"/>
+                            <constraint firstItem="hPs-Fa-s9W" firstAttribute="leading" secondItem="TWT-RW-HOg" secondAttribute="leading" id="PHd-G1-SFa"/>
+                            <constraint firstItem="Pad-C3-8t0" firstAttribute="trailing" secondItem="TWT-RW-HOg" secondAttribute="trailing" id="Uzt-eg-1Jy"/>
+                            <constraint firstItem="TWT-RW-HOg" firstAttribute="trailing" secondItem="kxL-SW-Nqz" secondAttribute="trailing" constant="20" id="e6G-81-Zuq"/>
+                            <constraint firstItem="Pad-C3-8t0" firstAttribute="leading" secondItem="TWT-RW-HOg" secondAttribute="leading" id="sJY-QE-7hX"/>
+                            <constraint firstItem="Pad-C3-8t0" firstAttribute="bottom" secondItem="TWT-RW-HOg" secondAttribute="bottom" id="xMm-57-VUD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="goalTextView" destination="2ce-RR-08Y" id="Kqc-te-LCI"/>
+                        <outlet property="longTermButton" destination="olD-Wh-wGY" id="CQ6-LT-Oy3"/>
+                        <outlet property="nextButton" destination="Pad-C3-8t0" id="aS3-HV-a6k"/>
+                        <outlet property="shortTermButton" destination="6g0-Sx-9Xt" id="oQd-kz-GpL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lm6-Wr-gif" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876.81159420289862" y="93.750000000000014"/>
+        </scene>
     </scenes>
     <resources>
         <image name="addGoal" width="35" height="32"/>
+        <image name="back" width="14" height="25"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

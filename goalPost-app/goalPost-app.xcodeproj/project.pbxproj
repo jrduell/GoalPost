@@ -15,6 +15,7 @@
 		5F3D4CB02587A43400F064A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F3D4CAF2587A43400F064A5 /* Assets.xcassets */; };
 		5F3D4CB32587A43400F064A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F3D4CB12587A43400F064A5 /* LaunchScreen.storyboard */; };
 		5F7CF9A5258A4AB700E392E3 /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7CF9A4258A4AB700E392E3 /* GoalType.swift */; };
+		5FABEE54258BC55600088DE9 /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FABEE53258BC55600088DE9 /* CreateGoalVC.swift */; };
 		5FF91509258862600035BBA0 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF91508258862600035BBA0 /* GoalCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		5F3D4CB22587A43400F064A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F3D4CB42587A43400F064A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F7CF9A4258A4AB700E392E3 /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
+		5FABEE53258BC55600088DE9 /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
 		5FF91508258862600035BBA0 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				5F3D4CA72587A43300F064A5 /* GoalsVC.swift */,
+				5FABEE53258BC55600088DE9 /* CreateGoalVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				5F3D4CA42587A43300F064A5 /* AppDelegate.swift in Sources */,
 				5F7CF9A5258A4AB700E392E3 /* GoalType.swift in Sources */,
 				5F3D4CAE2587A43300F064A5 /* goalPost_app.xcdatamodeld in Sources */,
+				5FABEE54258BC55600088DE9 /* CreateGoalVC.swift in Sources */,
 				5FF91509258862600035BBA0 /* GoalCell.swift in Sources */,
 				5F3D4CA62587A43300F064A5 /* SceneDelegate.swift in Sources */,
 			);
