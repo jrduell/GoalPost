@@ -346,6 +346,7 @@
                                         <state key="normal" image="back"/>
                                         <connections>
                                             <action selector="backButtonWasPressed:" destination="DEf-1O-z6L" eventType="touchUpInside" id="LEK-Kx-ika"/>
+                                            <action selector="backButtonWasPressed:" destination="MPD-Mj-l8y" eventType="touchUpInside" id="ayp-pD-eUK"/>
                                         </connections>
                                     </button>
                                 </subviews>
