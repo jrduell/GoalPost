@@ -95,17 +95,20 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ik8-MA-LFx">
                                                     <rect key="frame" x="30" y="11" width="322" height="48"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KTy-2S-ULr">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KTy-2S-ULr">
                                                             <rect key="frame" x="0.0" y="0.0" width="322" height="26"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="iwZ-8R-9fP">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="58.666666666666664" height="26"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="26"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="50" id="iTB-hy-HNh"/>
+                                                                    </constraints>
                                                                     <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eat salad twice a week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="6Kq-fi-yZp">
-                                                                    <rect key="frame" x="63.666666666666657" y="0.0" width="258.33333333333337" height="26"/>
+                                                                    <rect key="frame" x="55" y="0.0" width="267" height="26"/>
                                                                     <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
