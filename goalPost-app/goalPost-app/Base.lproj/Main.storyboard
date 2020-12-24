@@ -21,24 +21,24 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="7wI-Zk-6Oh">
-                                        <rect key="frame" x="150.66666666666666" y="33" width="112.99999999999997" height="25"/>
+                                        <rect key="frame" x="143.33333333333334" y="27.666666666666671" width="127.66666666666666" height="30.333333333333329"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hyh-cG-u3a">
-                                                <rect key="frame" x="0.0" y="0.0" width="53" height="25"/>
-                                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="22"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="62.333333333333336" height="30.333333333333332"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="highlightedColor" systemColor="labelColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1N-yE-PKW">
-                                                <rect key="frame" x="60" y="0.0" width="53" height="25"/>
-                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="22"/>
+                                                <rect key="frame" x="69.333333333333314" y="0.0" width="58.333333333333343" height="30.333333333333332"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5R-ta-KLB">
-                                        <rect key="frame" x="364" y="29.666666666666671" width="35" height="32"/>
+                                        <rect key="frame" x="364" y="27" width="35" height="32"/>
                                         <state key="normal" image="addGoal"/>
                                         <connections>
                                             <action selector="addGoalButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GT1-3O-2Gs"/>
@@ -55,17 +55,17 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nIS-50-gxX">
-                                <rect key="frame" x="70.333333333333343" y="145" width="273.66666666666663" height="60"/>
+                                <rect key="frame" x="89.333333333333329" y="145" width="235.66666666666669" height="75"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to GoalPost" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gk3-6v-FTw">
-                                        <rect key="frame" x="0.0" y="0.0" width="273.66666666666669" height="24"/>
-                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="24"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="235.66666666666666" height="33"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To begin, create a goal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEV-jV-d1G">
-                                        <rect key="frame" x="26.333333333333343" y="44" width="221" height="16"/>
-                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
+                                        <rect key="frame" x="34.666666666666671" y="53" width="166" height="22"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -89,7 +89,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="40" id="Kvl-vW-prd"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="CourierNewPS-BoldItalicMT" family="Courier New" pointSize="39"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="39"/>
                                                     <color key="textColor" red="0.42745098040000001" green="0.73725490199999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ik8-MA-LFx">
@@ -103,13 +103,13 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="50" id="iTB-hy-HNh"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
+                                                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eat salad twice a week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="6Kq-fi-yZp">
                                                                     <rect key="frame" x="55" y="0.0" width="267" height="26"/>
-                                                                    <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="17"/>
+                                                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -119,14 +119,14 @@
                                                             <rect key="frame" x="0.0" y="31" width="322" height="17"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJE-7z-5Mr">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="51.333333333333336" height="17"/>
-                                                                    <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="42" height="17"/>
+                                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Short term" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aA5-x2-ouv">
-                                                                    <rect key="frame" x="56.333333333333343" y="0.0" width="265.66666666666663" height="17"/>
-                                                                    <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                                    <rect key="frame" x="47" y="0.0" width="275" height="17"/>
+                                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -137,18 +137,39 @@
                                                         <constraint firstItem="KTy-2S-ULr" firstAttribute="height" secondItem="8Dw-Qu-KE1" secondAttribute="height" multiplier="1.52941" id="dtc-hU-abr"/>
                                                     </constraints>
                                                 </stackView>
+                                                <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rs8-7G-wam">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOAL COMPLETE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vke-x3-tmf">
+                                                            <rect key="frame" x="39.666666666666657" y="7.6666666666666679" width="335" height="54.666666666666657"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-BoldItalic" family="Avenir Next" pointSize="40"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.96470588239999999" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Vke-x3-tmf" firstAttribute="centerX" secondItem="Rs8-7G-wam" secondAttribute="centerX" id="WCl-4N-5cX"/>
+                                                        <constraint firstItem="Vke-x3-tmf" firstAttribute="centerY" secondItem="Rs8-7G-wam" secondAttribute="centerY" id="p1e-d1-ego"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="X3e-Sa-Ih4" firstAttribute="top" secondItem="sxz-OE-hfg" secondAttribute="top" constant="8" id="17J-ZC-rW3"/>
                                                 <constraint firstItem="X3e-Sa-Ih4" firstAttribute="leading" secondItem="Ik8-MA-LFx" secondAttribute="trailing" constant="10" id="4BC-W3-ZXB"/>
                                                 <constraint firstItem="Ik8-MA-LFx" firstAttribute="leading" secondItem="sxz-OE-hfg" secondAttribute="leadingMargin" constant="10" id="5f6-Px-8Gf"/>
+                                                <constraint firstAttribute="trailing" secondItem="Rs8-7G-wam" secondAttribute="trailing" id="OOa-jK-Uhr"/>
                                                 <constraint firstItem="Ik8-MA-LFx" firstAttribute="top" secondItem="sxz-OE-hfg" secondAttribute="topMargin" id="Ofe-d3-A5w"/>
+                                                <constraint firstItem="Rs8-7G-wam" firstAttribute="leading" secondItem="sxz-OE-hfg" secondAttribute="leading" id="T9p-9c-Cdd"/>
+                                                <constraint firstItem="Rs8-7G-wam" firstAttribute="top" secondItem="sxz-OE-hfg" secondAttribute="top" id="ZLv-cw-O3j"/>
+                                                <constraint firstAttribute="bottom" secondItem="Rs8-7G-wam" secondAttribute="bottom" id="h1a-9U-njU"/>
                                                 <constraint firstAttribute="trailing" secondItem="X3e-Sa-Ih4" secondAttribute="trailing" constant="12" id="kIS-VX-MpD"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="Ik8-MA-LFx" secondAttribute="bottom" id="lPz-y2-CIB"/>
                                                 <constraint firstAttribute="bottom" secondItem="X3e-Sa-Ih4" secondAttribute="bottom" constant="8" id="mjz-uL-rWb"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="completionView" destination="Rs8-7G-wam" id="QQD-T3-a4g"/>
                                             <outlet property="goalDescriptionLabel" destination="6Kq-fi-yZp" id="Ywg-cU-v23"/>
                                             <outlet property="goalProgressLabel" destination="X3e-Sa-Ih4" id="e84-kS-XCQ"/>
                                             <outlet property="goalTypeLabel" destination="aA5-x2-ouv" id="t8A-3v-e8x"/>
@@ -163,6 +184,7 @@
                             <constraint firstItem="nIS-50-gxX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Nh-Ce-Kne"/>
                             <constraint firstItem="UYL-QR-14T" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4qz-md-WRg"/>
                             <constraint firstItem="1qm-NN-ktd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6RA-eo-IRk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UYL-QR-14T" secondAttribute="bottom" id="6ot-ov-Dd7"/>
                             <constraint firstItem="UYL-QR-14T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Dsr-o7-y3U"/>
                             <constraint firstItem="nIS-50-gxX" firstAttribute="top" secondItem="1qm-NN-ktd" secondAttribute="bottom" constant="75" id="Ehw-vq-YM3"/>
                             <constraint firstItem="1qm-NN-ktd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IYk-PE-dpO"/>
@@ -191,17 +213,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="ldP-6r-Ipx">
-                                        <rect key="frame" x="150.66666666666666" y="27" width="112.99999999999997" height="31"/>
+                                        <rect key="frame" x="143.33333333333334" y="27" width="127.66666666666666" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ude-qP-oew">
-                                                <rect key="frame" x="0.0" y="0.0" width="53" height="31"/>
-                                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="22"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="62.333333333333336" height="31"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="highlightedColor" systemColor="labelColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tk2-eo-hEh">
-                                                <rect key="frame" x="60" y="0.0" width="53" height="31"/>
-                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="22"/>
+                                                <rect key="frame" x="69.333333333333314" y="0.0" width="58.333333333333343" height="31"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -229,15 +251,15 @@
                                 <rect key="frame" x="20" y="90" width="374" height="260"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What is your goal?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2ce-RR-08Y">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="176"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="170.66666666666666"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select One: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhd-yt-ySH">
-                                        <rect key="frame" x="0.0" y="186" width="374" height="14"/>
-                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
+                                        <rect key="frame" x="0.0" y="180.66666666666669" width="374" height="19.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="highlightedColor" systemColor="secondaryLabelColor"/>
                                     </label>
@@ -247,7 +269,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6g0-Sx-9Xt">
                                                 <rect key="frame" x="0.0" y="0.0" width="177" height="50"/>
                                                 <color key="backgroundColor" red="0.42745098040000001" green="0.73725490199999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                                 <state key="normal" title="SHORT TERM">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
@@ -258,7 +280,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="olD-Wh-wGY">
                                                 <rect key="frame" x="197" y="0.0" width="177" height="50"/>
                                                 <color key="backgroundColor" red="0.69803921568627447" green="0.8666666666666667" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                                 <state key="normal" title="LONG TERM">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
@@ -328,17 +350,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="vvf-mI-xxn">
-                                        <rect key="frame" x="150.66666666666666" y="27" width="112.99999999999997" height="31"/>
+                                        <rect key="frame" x="143.33333333333334" y="27" width="127.66666666666666" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGy-hh-lV2">
-                                                <rect key="frame" x="0.0" y="0.0" width="53" height="31"/>
-                                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="22"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="62.333333333333336" height="31"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="highlightedColor" systemColor="labelColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBk-rp-L1R">
-                                                <rect key="frame" x="60" y="0.0" width="53" height="31"/>
-                                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="22"/>
+                                                <rect key="frame" x="69.333333333333314" y="0.0" width="58.333333333333343" height="31"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -367,19 +389,23 @@
                                 <rect key="frame" x="20" y="90" width="374" height="125"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many points until complete?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6C2-hm-Hlg">
-                                        <rect key="frame" x="10.333333333333343" y="0.0" width="353.66666666666663" height="19"/>
-                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="19"/>
+                                        <rect key="frame" x="42.666666666666657" y="0.0" width="289" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="fX6-Fk-toF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="85" translatesAutoresizingMaskIntoConstraints="NO" id="d8P-XS-fBs">
-                                        <rect key="frame" x="161" y="34" width="52" height="91"/>
-                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="85"/>
+                                        <rect key="frame" x="162.33333333333334" y="45" width="49.333333333333343" height="80"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="85"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="r14-6k-ZAU"/>
+                                    <constraint firstItem="6C2-hm-Hlg" firstAttribute="centerX" secondItem="OQu-6O-4eX" secondAttribute="centerX" id="wkD-X0-rQW"/>
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uya-zi-CIm" customClass="ExtraView">

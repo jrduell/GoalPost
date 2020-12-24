@@ -14,6 +14,7 @@ class GoalsVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    
     var goals: [Goal] = []
     
     override func viewDidLoad() {
@@ -25,7 +26,6 @@ class GoalsVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        //tableView.reloadData()
         fetchCoreDataObjects()
     }
     
@@ -49,7 +49,7 @@ class GoalsVC: UIViewController {
         guard let createGoalVC = storyboard?.instantiateViewController(withIdentifier: "CreateGoalVC") else { return }
         presentDetail(createGoalVC)
     }
-    
+        
 }
 
 extension GoalsVC: UITableViewDelegate, UITableViewDataSource {
@@ -84,21 +84,44 @@ extension GoalsVC: UITableViewDelegate, UITableViewDataSource {
             self.fetchCoreDataObjects()
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
+        
+        let addProgressAction = UIContextualAction(style: .normal, title: "ADD 1") { (rowAction, view, boolArg) in
+            self.updateProgress(atIndexPath: indexPath)
+            tableView.reloadRows(at: [indexPath], with: .automatic)
+        }
+        
         deleteAction.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
-        let swipeActions = UISwipeActionsConfiguration(actions: [deleteAction])
+        addProgressAction.backgroundColor = #colorLiteral(red: 0.9385011792, green: 0.7164435983, blue: 0.3331357837, alpha: 1)
+        let swipeActions = UISwipeActionsConfiguration(actions: [deleteAction, addProgressAction])
         return swipeActions
     }
 }
 
 extension GoalsVC {
     
-    func removeGoal(atIndexPath indexPath: IndexPath) {
+    func updateProgress(atIndexPath indexPath: IndexPath) {
         guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
-        managedContext.delete(goals[indexPath.row])
+        
+        let chosenGoal = goals[indexPath.row]
+        
+        if (chosenGoal.goalProgress < chosenGoal.goalCompletionValue) {
+            chosenGoal.goalProgress += 1
+        } else { return }
         
         do {
             try managedContext.save()
-            print("Successfully removed goal!")
+            print("Progress updated successfully...")
+        } catch {
+            debugPrint("Could not update progress: \(error.localizedDescription)")
+        }
+    }
+    
+    func removeGoal(atIndexPath indexPath: IndexPath){
+        
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
+        managedContext.delete(goals[indexPath.row])
+        do {
+            try managedContext.save()
         } catch {
             print("Could not remove: \(error.localizedDescription)")
         }
@@ -119,4 +142,5 @@ extension GoalsVC {
         }
     }
 }
+
 
